@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.container{
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    background-color: #fffaf5;
+}
+
+/* Header */
+.header{
+    background-color: #fdebd3;
+    border: 1px solid #e5d3c0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo{
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* Menu */
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li{
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Student Section */
+.student-section{
+    margin-top: 20px;
+    background-color: #fff3e6;
+    border: 1px solid #e5d3c0;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    padding: 30px;
+}
+
+/* Student Image */
+.student-image img{
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+
+/* Student Information */
+.student-info h2{
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.student-info p{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #555;
+}
