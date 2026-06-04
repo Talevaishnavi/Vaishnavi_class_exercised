@@ -1,0 +1,12 @@
+package com.contactmanager.servlet;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.contactmanager.model.Contact;
+
+public class ContactStore {
+
+    public static List<Contact> contacts = new ArrayList<>();
+}

@@ -1,0 +1,30 @@
+package com.example.deploymentmaster.controller;
+
+
+
+import com.example.deploymentmaster.entity.User;
+import com.example.deployment.service.UserService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    private final UserService service;
+
+    public UserController(UserService service) {
+        this.service = service;
+    }
+
+    @GetMapping
+    public List<User> getUsers() {
+        return service.getAllUsers();
+    }
+
+    @PostMapping
+    public User addUser(@RequestBody User user) {
+        return service.saveUser(user);
+    }
+}

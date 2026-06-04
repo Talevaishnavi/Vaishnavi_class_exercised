@@ -1,0 +1,5 @@
+package com.example.deploymentmaster.repository;
+
+public class UserRepository {
+
+}
